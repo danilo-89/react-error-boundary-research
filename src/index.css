@@ -45,7 +45,14 @@ h1 {
 h2 {
 	font-size: 1.4em;
 	font-weight: bold;
-	margin-bottom: 1rem;
+	margin-bottom: 0.8rem;
+	color: #cdb3d8;
+}
+
+h3 {
+	color: rgb(187, 150, 205);
+	font-weight: 700;
+	margin-bottom: 14px;
 }
 
 button {
@@ -56,8 +63,10 @@ button {
 	font-weight: 500;
 	font-family: inherit;
 	background-color: #1a1a1a;
+	color: #cdb3d8;
 	cursor: pointer;
 	transition: border-color 0.25s;
+	margin-bottom: 8px;
 }
 button:hover {
 	border-color: #bf5eda;

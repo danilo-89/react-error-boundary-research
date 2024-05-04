@@ -50,7 +50,7 @@ const logError = (error: Error, info: ErrorInfo) => {
 
 function App() {
 	const { reset } = useQueryErrorResetBoundary();
-	const [globalData, setGlobalData] = useState(['global data', ' ', 'ok']);
+	const [globalData, setGlobalData] = useState(['ok']);
 
 	const handleReset = () => {
 		// Custom logic to reset all query errors

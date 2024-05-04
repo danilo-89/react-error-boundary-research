@@ -8,15 +8,17 @@ function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
 	return (
 		<div>
 			<h2 className='text-red-700'>Error Fallback</h2>
-			<p>Error: {error.message}</p>
+			<p className='mb-4'>Error: {error.message}</p>
 
-			<button type='button' onClick={() => resetErrorBoundary()}>
-				Reset error boundary
-			</button>
+			<div className='flex gap-2'>
+				<button type='button' onClick={() => resetErrorBoundary()}>
+					Reset error boundary
+				</button>
 
-			<button type='button' onClick={() => window.location.reload()}>
-				Reload page
-			</button>
+				<button type='button' onClick={() => window.location.reload()}>
+					Reload page
+				</button>
+			</div>
 		</div>
 	);
 }
