@@ -58,12 +58,12 @@ const Test = () => {
 	};
 
 	return (
-		<div>
-			<div className='gap-4 flex flex-col w-[790px]'>
+		<div className='max-w-full'>
+			<div className='gap-4 flex flex-col w-[790px] max-w-full'>
 				{/* tanstack-query */}
 				<section className='border-2 rounded border-gray-500/10 p-4 bg-[#202020]'>
 					<h3>tanstack-query</h3>
-					<div className='gap-4 flex'>
+					<div className='gap-4 flex flex-col md:flex-row'>
 						<div className='p-4 bg-[#3a2840] flex-1'>
 							<button type='button' onClick={() => mutate()}>
 								useMutation with error
@@ -82,7 +82,7 @@ const Test = () => {
 				{/* state */}
 				<section className='border-2 rounded border-gray-500/10 p-4 bg-[#202020]'>
 					<h3>state</h3>
-					<div className='gap-4 flex'>
+					<div className='gap-4 flex flex-col md:flex-row'>
 						<div className='p-4 bg-[#3a2840] flex-1'>
 							<button type='button' onClick={throwError}>
 								Cause an error
