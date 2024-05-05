@@ -58,7 +58,7 @@ const Test = () => {
 	};
 
 	return (
-		<div className='max-w-full'>
+		<div className='max-w-full w-full flex justify-center'>
 			<div className='gap-4 flex flex-col w-[790px] max-w-full'>
 				{/* tanstack-query */}
 				<section className='border-2 rounded border-gray-500/10 p-4 bg-[#202020]'>
