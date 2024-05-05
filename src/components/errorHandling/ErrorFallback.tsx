@@ -10,7 +10,7 @@ function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
 			<h2 className='text-red-700'>Error Fallback</h2>
 			<p className='mb-4'>Error: {error.message}</p>
 
-			<div className='flex gap-2'>
+			<div className='flex gap-2 justify-center'>
 				<button type='button' onClick={() => resetErrorBoundary()}>
 					Reset error boundary
 				</button>
